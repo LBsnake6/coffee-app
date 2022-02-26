@@ -1,8 +1,9 @@
 <ul class = "partners">
     <li *ngFor = "let partner of partners">
             <span class= "badge"> {{partner.name}}</span><br>
-             {{partner.location}}<br>
-            {{partner.website}}<br>
+             <ol>{{partner.location}}<br>
+            <a href="{{partner.website}}">{{partner.website}}</a><br>
+            </ol>
     </li>
 
 </ul>
