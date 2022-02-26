@@ -4,6 +4,7 @@ import { AboutComponent } from './about/about.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { PartnersComponent } from './partners/partners.component';
+import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 import { RecipesComponent } from './recipes/recipes.component';
 
 const routes: Routes = [
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path: 'partners', component: PartnersComponent},
   {path: 'recipes', component: RecipesComponent},
   {path: 'home',component:HomeComponent},
+  {path: 'recipes/:name', component: RecipeDetailComponent},
   {path: '', redirectTo: '/home',pathMatch: 'full'}
 ];
 

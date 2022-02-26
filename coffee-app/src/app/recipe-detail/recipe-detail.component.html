@@ -1,0 +1,15 @@
+<div *ngIf="recipe">
+    <h1>{{recipe.name}}</h1>
+    <h3>Estimated time: {{recipe.time}} mintues</h3>
+    <ul>
+        <label> Ingredients: </label>
+        <li class ="ingredients" *ngFor = "let ingr of recipe.ingredients">
+            <p>{{ingr}}</p>
+        </li> <br>
+        <label>Instructions:</label>
+        <li class = "instructions" *ngFor ="let instr of recipe.instruction">
+            <p>{{instr}}</p>
+        </li>
+    </ul>
+
+</div>

@@ -1,1 +1,9 @@
-<p>recipes works!</p>
+<ul class = "recipes">
+    <li *ngFor = "let recipe of recipes">
+        <a routerLink="/recipes/{{recipe.name}}">
+        <span class = "badge">{{recipe.name}} </span> 
+            {{recipe.time}}
+        </a>
+
+    </li>    
+</ul>
