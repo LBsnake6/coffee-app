@@ -10,7 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 import { LocationComponent } from './location/location.component';
 import { FormsModule } from '@angular/forms';
-import { ActivatedRoute, RouterModule } from '@angular/router';
+
 
 
 @NgModule({
@@ -28,8 +28,7 @@ import { ActivatedRoute, RouterModule } from '@angular/router';
     AppRoutingModule,
     BrowserModule,
     FormsModule,
-    ActivatedRoute,
-    RouterModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
