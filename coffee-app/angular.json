@@ -80,7 +80,8 @@
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
             "host" : "rochestercoffeecorner.com",
-            "port" : 80
+            "port" : 80,
+             "browserTarget": "coffee-app:build"
           }
         },
         "test": {
