@@ -1,0 +1,17 @@
+
+a:link {
+    background-color: black;
+    color: lightblue;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+a:visited {
+    color: pink;
+}
+
+div {
+    margin: 50px;
+}
+
+

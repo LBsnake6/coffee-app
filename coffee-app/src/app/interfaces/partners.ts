@@ -7,4 +7,6 @@ export interface Partners{
     hours: string;
     items: string;
     vibe: string;
+    logo: string;
+    alt: string;
 }
