@@ -1,9 +1,28 @@
-<ul class = "recipes">
-    <li *ngFor = "let recipe of recipes">
-        <a routerLink="/recipes/{{recipe.name}}">
-        <span class = "badge">{{recipe.name}} </span> 
-            {{recipe.time}}
-        </a>
+<h1> works</h1>
+<div>
+<ul class = "ingredients">
+    <label> Ingredients </label>
+    <li *ngFor="let int of ingredients">
+        <button type ="button" (click)="addtolist(int)" (click)="filter()"> {{int}} </button>
+    </li>
 
+    <label> Selected Ingredients </label>
+    <li *ngFor ="let s of selected">
+        <button type ="button" (click)="removeFromlist(s)" (click)="filter()">{{s}} </button>
+    </li>
+    <button type="button" (click)="clear()" (click) = "getlist()">Clear Selected </button>
+    <button type="submit" (click) ="filter()"> Submit filter</button>
+</ul>
+
+
+</div>
+
+<div>
+<ul class = "recipes">
+    <li *ngFor = "let recipe of temp">
+       <a routerLink="/recipes/{{recipe.name}}">
+        <span class = "badge">{{recipe.name}} </span>
+        </a>
     </li>    
 </ul>
+</div>

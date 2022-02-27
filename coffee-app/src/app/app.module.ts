@@ -9,6 +9,7 @@ import { RecipesComponent } from './recipes/recipes.component';
 import { HomeComponent } from './home/home.component';
 import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 import { LocationComponent } from './location/location.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { LocationComponent } from './location/location.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
