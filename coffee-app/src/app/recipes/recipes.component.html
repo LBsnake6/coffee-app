@@ -1,28 +1,33 @@
-<h1> works</h1>
+<div class="recipe">
 <div>
 <ul class = "ingredients">
-    <label> Ingredients </label>
-    <li *ngFor="let int of ingredients">
-        <button type ="button" (click)="addtolist(int)" (click)="filter()"> {{int}} </button>
+    <h1> Ingredients </h1>
+    <li class = "r" *ngFor="let int of ingredients">
+        <button class ="g" type ="button" (click)="addtolist(int)"  > {{int}} </button>
     </li>
-
-    <label> Selected Ingredients </label>
-    <li *ngFor ="let s of selected">
-        <button type ="button" (click)="removeFromlist(s)" (click)="filter()">{{s}} </button>
+    </ul>
+</div>
+<div>
+    <ul class="selected">
+    <h1> Selected Ingredients </h1>
+    <li class = "r" *ngFor ="let s of selected">
+        <button  class ="b" type ="button" (click)="removeFromlist(s)" (click)="filter()">{{s}} </button>
     </li>
     <button type="button" (click)="clear()" (click) = "getlist()">Clear Selected </button>
     <button type="submit" (click) ="filter()"> Submit filter</button>
 </ul>
 
-
+<br>
 </div>
 
 <div>
 <ul class = "recipes">
-    <li *ngFor = "let recipe of temp">
-       <a routerLink="/recipes/{{recipe.name}}">
-        <span class = "badge">{{recipe.name}} </span>
-        </a>
+    <h1>Results: </h1>
+    <li  class="p" *ngFor = "let recipe of temp">
+       <a  style = "text-decoration: none;"  routerLink="/recipes/{{recipe.name}}">
+        <span class = "badge">{{recipe.name}} </span> 
+        </a> <br>
     </li>    
 </ul>
+</div>
 </div>

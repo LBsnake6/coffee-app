@@ -1,19 +1,55 @@
 
-  nav a {
-    padding: 1rem;
-    text-decoration: none;
-    margin-top: 10px;
-    background-color: #e8e8e8;
-    color: #3d3d3d;
-    border-radius: 4px;
-    display: inline-flex;
-    justify-content: center;
+ 
+  html{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
-  
   nav a:hover {
-    color: white;
-    background-color: #42545C;
+    color: black;
+    background-color: grey;
+    
   }
-  nav a.active {
+  li {
+    display: inline;
+    
+  }
+  li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .a {
+    list-style-type: none;
+    transform: scale(1.01);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     background-color: black;
   }
+  .active{
+
+    background-color: burlywood;
+  }
+  nav a.active {
+    background-color: burlywood;
+  }
+  footer{ background-color: black;
+    color: white;
+    width: auto;
+    height: auto;
+   bottom:0;
+    transform: scale(1.01);
+  }
+  footer ul { margin: 0; 
+    padding: 0; 
+    list-style: none;
+    text-decoration: none; }
+  footer ul li { 
+    display: inline-block; 
+    margin-left: 25px; 
+  }
+  
+  

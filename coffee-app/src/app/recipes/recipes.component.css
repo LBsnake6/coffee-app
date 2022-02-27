@@ -1,0 +1,41 @@
+ul {
+    list-style-type: none;
+
+}
+.b{
+    display: block;
+    margin-bottom: 15px;
+    padding: 3px;
+}
+.r {
+ display: block;
+  margin-bottom: 15px;
+  width: 50%;
+  padding: 3px;
+  
+}
+.g{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+.p{
+    color: white
+}
+ .recipe{
+    background-image: url('../website-images/recipe-page-hero.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat:  no-repeat;
+  min-height: 100%;
+  transform: scale(1);
+  color: white
+}
+a {
+    display:  inline-flex;
+    background-color: whitesmoke;
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+}
