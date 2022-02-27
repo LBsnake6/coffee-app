@@ -6,4 +6,5 @@ export interface Partners{
     website: string;
     hours: string;
     items: string;
+    vibe: string;
 }
