@@ -14,4 +14,11 @@ export class RecipeService {
     return of(recipe);
 
   }
+
+  getRecipes(): Observable<recipes[]>{
+   const recipe = of(RECIPES);
+   return recipe;
+  }
+
+
 }
